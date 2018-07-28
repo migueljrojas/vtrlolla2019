@@ -1,2 +1,11 @@
 header.header
-    
+    .header__bar
+    .container
+        .header__logo
+            a(href="https://vtr.com")
+                img(src="/images/logo.png")
+        ul.header__social
+            each red in site.data.social
+               li
+                   a(href=red.url, target="_blank")
+                       i(class="fa fa-#{red.name}")

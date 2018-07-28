@@ -1,1 +1,12 @@
 footer.footer
+    .container.footer__contaienr
+        .footer__rock
+        .footer__logo
+            a(href="https://vtr.com")
+                strong vtr.
+                span com
+        ul.footer__social
+            each red in site.data.social
+               li
+                   a(href=red.url, target="_blank")
+                       i(class="fa fa-#{red.name}")

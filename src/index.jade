@@ -2,3 +2,48 @@ extends _layouts/base
 
 block content
     main.home
+        section.home__hero
+            .home__hero__stage
+                .home__hero__doodle.home__hero__doodle--diamonds
+                .home__hero__doodle.home__hero__doodle--ovni
+                .home__hero__doodle.home__hero__doodle--hand
+                .home__hero__doodle.home__hero__doodle--headphones
+                .home__hero__doodle.home__hero__doodle--casette
+                .home__hero__doodle.home__hero__doodle--mixer
+                
+            .home__hero__content
+                .home__hero__logo
+                    a(href="http://vtreslollacl.cl/")
+                        img(src="/images/logo-lollapalooza.png")
+                p.home__hero__text
+                    | Si eres <strong>VTR</strong>, vive hoy la preventa de  
+                    | <strong>Lollapalooza Chile 2019</strong> con los beneficios  
+                    | exclusivos que tenemos para ti.
+                a.home__hero__hash
+                    span._back
+                    span._text #VTResLollaCL 
+        
+        section.home__content
+            .home__papersheet
+                .home__papersheet__corner.home__papersheet__corner--topleft
+                .home__papersheet__corner.home__papersheet__corner--topright
+                .home__papersheet__corner.home__papersheet__corner--botleft
+                .home__papersheet__corner.home__papersheet__corner--botright
+                .home__papersheet__border.home__papersheet__border--top
+                .home__papersheet__border.home__papersheet__border--left
+                .home__papersheet__border.home__papersheet__border--right
+                .home__papersheet__border.home__papersheet__border--bot
+                .home__papersheet__body
+            
+            .home__days
+                ul.home__days__list
+                    each item in site.data.home.days
+                        li.home__days__item
+                            a.home__days__item__btn
+                                span= item.name
+                                
+            .home__content__cta
+                p.home__content__cta__disclaimer
+                    | No incluye 12% de cargo por servicio  
+                    | (Se aplica sobre el valor de la entrada sin descuento)
+                a.home__content__cta__btn(href="http://www.puntoticket.com/lollapalooza-vtr")
