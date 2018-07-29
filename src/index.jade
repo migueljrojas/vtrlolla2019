@@ -5,26 +5,36 @@ block content
         section.home__hero
             .home__hero__stage
                 .home__hero__doodle.home__hero__doodle--diamonds
+                    img(src="/images/diamonds.png")
                 .home__hero__doodle.home__hero__doodle--ovni
+                    img(src="/images/ovni.png")
                 .home__hero__doodle.home__hero__doodle--hand
+                    img(src="/images/monster-hand.png")
                 .home__hero__doodle.home__hero__doodle--headphones
+                    img(src="/images/headphones.png")
                 .home__hero__doodle.home__hero__doodle--casette
+                    img(src="/images/casette.png")
                 .home__hero__doodle.home__hero__doodle--mixer
+                    img(src="/images/mixer.png")
                 
-            .home__hero__content
-                .home__hero__logo
-                    a(href="http://vtreslollacl.cl/")
-                        img(src="/images/logo-lollapalooza.png")
-                p.home__hero__text
-                    | Si eres <strong>VTR</strong>, vive hoy la preventa de  
-                    | <strong>Lollapalooza Chile 2019</strong> con los beneficios  
-                    | exclusivos que tenemos para ti.
-                a.home__hero__hash
-                    span._back
-                    span._text #VTResLollaCL 
+            .container
+                .row
+                    .col-xs-24.col-sm-16.col-sm-offset-4
+                        .home__hero__content
+                            .home__hero__logo
+                                a(href="http://vtreslollacl.cl/")
+                                    img(src="/images/logo-lollapalooza.png")
+                            p.home__hero__text
+                                | Si eres <strong>VTR</strong>, vive hoy la preventa de  
+                                | <strong>Lollapalooza Chile 2019</strong> con los beneficios  
+                                | exclusivos que tenemos para ti.
+                            a.home__hero__hash
+                                span._back
+                                span._text #VTResLollaCL 
         
         section.home__content
             .home__papersheet
+                .home__papersheet__body
                 .home__papersheet__corner.home__papersheet__corner--topleft
                 .home__papersheet__corner.home__papersheet__corner--topright
                 .home__papersheet__corner.home__papersheet__corner--botleft
@@ -33,7 +43,6 @@ block content
                 .home__papersheet__border.home__papersheet__border--left
                 .home__papersheet__border.home__papersheet__border--right
                 .home__papersheet__border.home__papersheet__border--bot
-                .home__papersheet__body
             
             .home__days
                 ul.home__days__list
